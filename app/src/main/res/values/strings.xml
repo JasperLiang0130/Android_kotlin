@@ -1,0 +1,33 @@
+<resources>
+    <string name="title_name">KIT305 Tutorial (1pm - 3pm)</string>
+    <string name="tab_text_1">Student</string>
+    <string name="tab_text_2">Tutorial</string>
+    <string name="studentAdd">Add new student</string>
+    <string name="schemeAdd">Add new scheme</string>
+    <string-array name="scheme_type">
+        <item>Attendance</item>
+        <item>Grade(HD+/HD/DN/CR/PP/NN)</item>
+        <item>Grade(A/B/C/D/F)</item>
+        <item>Score Of X</item>
+        <item>Checkbox</item>
+    </string-array>
+    <string-array name="attendance">
+        <item>Absent</item>
+        <item>Attend</item>
+    </string-array>
+    <string-array name="level_HD">
+        <item>HD+</item>
+        <item>HD</item>
+        <item>DN</item>
+        <item>CR</item>
+        <item>PP</item>
+        <item>NN</item>
+    </string-array>
+    <string-array name="level_A">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+    </string-array>
+</resources>

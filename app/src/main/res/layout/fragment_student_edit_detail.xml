@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/edit_s_img"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_s_name"
+        android:layout_width="155dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="this is s name"
+        app:layout_constraintStart_toEndOf="@+id/edit_s_img"
+        app:layout_constraintTop_toTopOf="@+id/edit_s_img" />
+
+    <EditText
+        android:id="@+id/edit_s_id"
+        android:layout_width="156dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="this is s id"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_s_img"
+        app:layout_constraintStart_toStartOf="@+id/edit_s_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_s_name" />
+
+    <ImageButton
+        android:id="@+id/s_delete"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitXY"
+        android:src="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_s_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_s_img" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:text="Average grade:"
+        app:layout_constraintStart_toStartOf="@+id/edit_s_img"
+        app:layout_constraintTop_toBottomOf="@+id/edit_s_img" />
+
+    <TextView
+        android:id="@+id/avgGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        android:text="GRADE"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/edit_s_week_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_ok"
+        app:layout_constraintEnd_toEndOf="@+id/s_delete"
+        app:layout_constraintStart_toStartOf="@+id/edit_s_img"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/edit_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/s_delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>
